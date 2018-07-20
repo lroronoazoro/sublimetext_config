@@ -8,10 +8,12 @@
 		"Babel",
 		"BracketHighlighter",
 		"DeleteBlankLines",
+		"DocBlockr",
 		"Emmet",
 		"HTML-CSS-JS Prettify",
 		"Package Control",
-		"Sync Settings",
+		"SCSS",
+		"SideBarEnhancements",
 		"Vue Syntax Highlight",
 		"Vuetify"
 	]
