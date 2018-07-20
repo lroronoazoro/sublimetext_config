@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[mapState]]></content>
+    <tabTrigger>map</tabTrigger>
+    <description>map - state</description>
+    <scope>text.html</scope>
+</snippet>

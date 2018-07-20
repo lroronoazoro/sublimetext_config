@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[<!-- css -->
+<style lang="scss" scoped>
+	${1: '../../style/variables'}
+</style>]]></content>
+    <tabTrigger>vuecss</tabTrigger>
+    <description>vuecss - js</description>
+    <scope>text.html</scope>
+</snippet>

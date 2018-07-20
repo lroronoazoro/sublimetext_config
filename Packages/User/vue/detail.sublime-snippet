@@ -1,0 +1,68 @@
+<snippet>
+    <content><![CDATA[<!-- html -->
+<template>
+    <div>
+        <v-header title="详情页"></v-header>
+        <v-tips :dataNoExist="dataNoExist" :showLoading="showLoading" :error="error" @changeStatus="statusHandle">
+            <div slot="content" class="container-com">
+                <v-footer></v-footer>
+            </div>
+        </v-tips>
+    </div>
+</template>
+
+<!-- js -->
+<script type="text/javascript">
+import { $1 } from '@/service/getData'
+import tips from '@/components/tips/tips'
+import header from '@/components/header/header'
+import footer from '@/components/footer/footer'
+
+export default {
+    data () {
+        return {
+            id: null, // 当前id
+            showLoading: true, // 加载图标
+            error: false, // 数据加载错误
+            dataNoExist: false, // 数据不存在
+            detail: null // 当前数据
+        }
+    }, // 参数
+    components: {
+        'v-tips': tips,
+        'v-header':header,
+        'v-footer':footer
+    }, // 组件
+    computed: {}, // 计算属性
+    methods: {
+        // 重新获取数据
+        statusHandle () {
+            this.getData(this)
+        },
+        // 获取数据
+        getData(that){
+            $1(that).then(() => {
+                // 数据回调
+            })
+        }
+    }, // 方法
+    watch: {}, // 检查值的变化  内部函数禁止使用箭头函数
+    beforeCreate () {}, // event/watcher 事件配置之前被调用
+    created () {
+        // 初始化获取数据
+        this.getData(this)
+    }, // 实例创建完立即调用此周期  属性目前不可见
+    mounted () {
+    }, // DOM操作
+    activated () {} // keep-alive 组件激活时调用, 即缓存启用的时候
+}
+</script>
+
+<!-- css -->
+<style lang="scss" scoped>
+    $2
+</style>]]></content>
+    <tabTrigger>detail</tabTrigger>
+    <description>vue - detail</description>
+    <scope>text.html</scope>
+</snippet>

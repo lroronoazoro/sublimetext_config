@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[\$route.path]]></content>
+    <tabTrigger>route</tabTrigger>
+    <description>route - path</description>
+    <scope>text.html</scope>
+</snippet>

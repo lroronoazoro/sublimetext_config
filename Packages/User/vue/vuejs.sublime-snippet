@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[<!-- js -->
+<script type="text/javascript">
+export default {
+    data () {
+        return {
+            id: 11
+        }
+    }, // 参数
+    props: [], // 子组件接收参数
+    components: {}, // 组件
+    computed: {}, // 计算属性
+    methods: {}, // 方法
+    watch: {}, // 检查值的变化  内部函数禁止使用箭头函数
+    beforeCreate () {}, // event/watcher 事件配置之前被调用
+    created () {}, // 实例创建完立即调用此周期 $el 属性目前不可见
+    mounted () {}, // DOM操作
+    activated () {} // keep-alive 组件激活时调用, 即缓存启用的时候
+}
+</script>]]></content>
+    <tabTrigger>vuejs</tabTrigger>
+    <description>vuejs - js</description>
+    <scope>text.html</scope>
+</snippet>

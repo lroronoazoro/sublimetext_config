@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[<template>
+    <div>
+        $1
+    </div>
+</template>]]></content>
+    <tabTrigger>template</tabTrigger>
+    <description>template - 模板</description>
+    <scope>text.html</scope>
+</snippet>

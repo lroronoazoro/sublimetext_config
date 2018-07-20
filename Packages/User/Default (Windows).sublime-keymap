@@ -1,0 +1,71 @@
+[
+    // 左移动
+    // 光标向左一个字符
+    {
+        "keys": ["alt+j"],
+        "command": "move",
+        "args":
+        {
+            "by": "characters",
+            "forward": false
+        }
+    },
+    // 右移动
+    // 光标向右一个字符
+    {
+        "keys": ["alt+l"],
+        "command": "move",
+        "args":
+        {
+            "by": "characters",
+            "forward": true
+        }
+    },
+    //光标向上移动
+    {
+        "keys": ["alt+i"],
+        "command": "move",
+        "args":
+        {
+            "by": "lines",
+            "forward": false
+        }
+    },
+    //光标向下移动
+    {
+        "keys": ["alt+k"],
+        "command": "move",
+        "args":
+        {
+            "by": "lines",
+            "forward": true
+        }
+    },
+    {
+        "keys": [
+            "ctrl+alt+shift+c"
+        ],
+        "args":
+        {
+            "action": "balance_inward"
+        },
+        "command": "run_emmet_action",
+        "context": [
+        {
+            "key": "emmet_action_enabled.balance_inward"
+        }]
+    },
+    {
+        "keys": [
+            "ctrl+shift+c"
+        ],
+        "args": {
+            "action": "balance_outward"
+        },
+        "command": "run_emmet_action",
+        "context": [{
+            "key": "emmet_action_enabled.balance_outward"
+        }]
+    }
+
+]

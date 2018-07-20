@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[mapMutations]]></content>
+    <tabTrigger>map</tabTrigger>
+    <description>map - mutations</description>
+    <scope>text.html</scope>
+</snippet>

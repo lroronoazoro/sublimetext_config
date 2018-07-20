@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[this.\$store.state.$1]]></content>
+    <tabTrigger>store</tabTrigger>
+    <description>store - state</description>
+    <scope>text.html</scope>
+</snippet>

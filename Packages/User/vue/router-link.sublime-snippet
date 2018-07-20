@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[<router-link to="$1">$2</router-link>]]></content>
+    <tabTrigger>router</tabTrigger>
+    <description>router - 路由跳转</description>
+    <scope>text.html</scope>
+</snippet>

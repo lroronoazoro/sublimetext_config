@@ -1,0 +1,18 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"BracketHighlighter",
+		"DeleteBlankLines",
+		"Emmet",
+		"HTML-CSS-JS Prettify",
+		"Package Control",
+		"Sync Settings",
+		"Vue Syntax Highlight",
+		"Vuetify"
+	]
+}

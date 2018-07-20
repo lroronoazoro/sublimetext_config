@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[\$route.query]]></content>
+    <tabTrigger>route</tabTrigger>
+    <description>route - query</description>
+    <scope>text.html</scope>
+</snippet>

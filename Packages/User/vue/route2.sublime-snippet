@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[\$route.hash]]></content>
+    <tabTrigger>route</tabTrigger>
+    <description>route - hash</description>
+    <scope>text.html</scope>
+</snippet>

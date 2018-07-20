@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[mapGetters]]></content>
+    <tabTrigger>map</tabTrigger>
+    <description>map - getter</description>
+    <scope>text.html</scope>
+</snippet>

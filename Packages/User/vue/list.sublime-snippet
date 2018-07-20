@@ -1,0 +1,72 @@
+<snippet>
+    <content><![CDATA[<!-- html -->
+<template>
+    <div>
+        <v-header title="列表页"></v-header>
+        <div class="container-com">
+        	<ul>
+		        <van-list
+			        v-model="showLoading"
+			        :finished="finished"
+			        @load="onLoad"
+			    >
+			        <router-link v-for="(item, index) in list" :key="index" tag="li" :to="{
+			        	path: '/home_news_detail',
+			        	query: {
+			        	    id:item.id
+			        	}}">
+			        </router-link>
+				</van-list>
+        	</ul>
+        	<v-footer></v-footer>
+        </div>
+    </div>
+</template>
+
+<!-- js -->
+<script type="text/javascript">
+import { List } from 'vant'
+
+import header from "@/components/header/header"
+
+import footer from "@/components/footer/footer.vue"
+
+import { $2 } from '@/service/getData'
+
+export default {
+    data () {
+        return {
+            list: [], // 数据源
+            showLoading: false, // 加载
+            finished: false, // 结束加载
+            pageIndex: 1, // 初始加载页数
+            filterParams: {} // 筛选条件参数
+        }
+    }, // 参数
+    components: {
+        [List.name]: List,
+        "v-header": header,
+        "v-footer": footer
+    }, // 组件
+    computed: {}, // 计算属性
+    methods: {
+        onLoad () {
+            $2(this)
+        }
+    }, // 方法
+    watch: {}, // 检查值的变化  内部函数禁止使用箭头函数
+    beforeCreate () {}, // event/watcher 事件配置之前被调用
+    created () {}, // 实例创建完立即调用此周期  属性目前不可见
+    mounted () {}, // DOM操作
+    activated () {} // keep-alive 组件激活时调用, 即缓存启用的时候
+}
+</script>
+
+<!-- css -->
+<style lang="scss" scoped>
+    $3
+</style>]]></content>
+    <tabTrigger>list</tabTrigger>
+    <description>vue - list</description>
+    <scope>text.html</scope>
+</snippet>
