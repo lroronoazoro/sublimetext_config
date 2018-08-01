@@ -30,8 +30,9 @@
         "caret": "var(white2)",
         "invisibles": "color(var(white3) alpha(0.35))",
         "line_highlight": "var(yellow4)",
-        "selection": "var(grey)",
+        "selection": "var(orange2)",
         "selection_border": "var(black2)",
+        "selection_foreground": "var(white)",
         "misspelling": "var(red2)",
         "active_guide": "color(var(orange2) alpha(0.69))",
         "find_highlight_foreground": "var(black)",
@@ -44,6 +45,21 @@
     },
     "rules":
     [
+        {
+            "foreground": "#ABABABFF",
+            "scope": "col_2B2B2BFF",
+            "background": "#2B2B2BFF"
+        },
+        {
+            "foreground": "#666666FF",
+            "scope": "col_E6E6E6FF",
+            "background": "#E6E6E6FF"
+        },
+        {
+            "scope": "col_666666FF",
+            "background": "#666666FF",
+            "foreground": "#E6E6E6FF"
+        },
         {
             "foreground": "#2B2B2BFF",
             "background": "#ABABABFF",

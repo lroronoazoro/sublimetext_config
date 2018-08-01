@@ -4,5 +4,9 @@
 {
 	"user": {
 		"gutter_icon": false,
+		"highlight": true,
+		"gutter_icon": "circle",
+		"highlight_values": false,
+		"named_values": false,
 	}
 }
